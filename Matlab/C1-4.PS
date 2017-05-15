@@ -1,0 +1,334 @@
+%!PS-Adobe-2.0 
+%%Creator: MATLAB, The Mathworks, Inc.
+%%Title: MATLAB graph
+%%CreationDate: 11/24/95  13:25:09
+%%DocumentFonts: Times-Roman
+%%DocumentNeededFonts: Times-Roman
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+
+%%BeginProlog
+
+% MathWorks dictionary
+/MathWorks 120 dict begin
+
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s /show ldef
+/sc /setrgbcolor ldef
+
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+
+% bounding box in default coordinates
+%initialize variables used in binded macros
+/llx 0 def
+/lly 0 def
+/urx 0 def
+/ury 0 def
+/bbox {/ury xdef /urx xdef /lly xdef /llx xdef} bdef
+
+% orientation switch
+/portraitMode 	(op) def
+/landscapeMode 	(ol) def
+/Orientation 	portraitMode def
+/portrait   	{/Orientation portraitMode  	def} bdef
+/landscape 	{/Orientation landscapeMode 	def} bdef
+
+% coordinate system mappings
+/dpi2point 0 def
+
+% font control
+/FontSize 0 def
+/FMS {
+	/FontSize xstore		%save size off stack
+	findfont
+	[FontSize dpi2point mul 0 0 FontSize dpi2point mul neg 0 0]
+	makefont
+	setfont
+	}bdef
+/setPortrait {
+	1 dpi2point div -1 dpi2point div scale
+	llx ury neg translate
+	} bdef
+/setLandscape {
+	1 dpi2point div -1 dpi2point div scale
+	urx ury neg translate
+	90 rotate
+	} bdef
+
+/csm {Orientation portraitMode eq {setPortrait} {setLandscape} ifelse} bdef
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+
+% macros for lines and objects
+/L {	% LineTo
+	lineto
+	stroke
+	} bdef
+/MP {	% MakePoly
+	3 1 roll moveto
+	1 sub {rlineto} repeat
+	} bdef
+/AP {	% AddPoly
+	{rlineto} repeat
+	} bdef
+/PP {	% PaintPoly
+	closepath fill
+	} bdef
+/DP {	% DrawPoly
+	closepath stroke
+	} bdef
+/MR {	% MakeRect
+	4 -2 roll moveto
+	dup  0 exch rlineto
+	exch 0 rlineto
+	neg  0 exch rlineto
+	closepath
+	} bdef
+/FR {	% FrameRect
+	MR stroke
+	} bdef
+/PR {	% PaintRect
+	MR fill
+	} bdef
+/L1i {	% Level 1 Image
+	{ currentfile picstr readhexstring pop } image
+	} bdef
+
+/half_width 0 def
+/half_height 0 def
+/MakeOval {
+	newpath
+	/ury xstore /urx xstore /lly xstore /llx xstore
+	/half_width  urx llx sub 2 div store
+	/half_height ury lly sub 2 div store
+	llx half_width add lly half_height add translate
+	half_width half_height scale
+	.5 half_width div setlinewidth
+	0 0 1 0 360 arc
+	} bdef
+/FO {
+	gsave
+	MakeOval stroke
+	grestore
+	} bdef
+/PO {
+	gsave
+	MakeOval fill
+	grestore
+	} bdef
+
+/PD {
+	2 copy moveto lineto stroke
+	} bdef
+
+
+currentdict end def %dictionary
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+% fonts for text, standard numbers and exponents
+%%IncludeFont: Times-Roman
+
+%line width, line cap, and joint spec
+0 setlinecap 1 setlinejoin
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox: 017 180 593 611
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: graph1 1
+bplot
+
+/dpi2point 12 def
+0204 2160 7116 7332 bbox portrait csm
+
+0 0 6912 5183 MR c np
+% Colortable Dictionary
+/colortable 76 dict begin
+/c0 { 0 0 0 sc} bdef
+/c1 { 1 1 1 sc} bdef
+/c2 { 1 0 0 sc} bdef
+/c3 { 0 1 0 sc} bdef
+/c4 { 0 0 1 sc} bdef
+/c5 { 1 1 0 sc} bdef
+/c6 { 1 0 1 sc} bdef
+/c7 { 0 1 1 sc} bdef
+currentdict end def % Colortable
+
+colortable begin
+
+
+/Helvetica 12 FMS
+
+c1
+   0    0 6912 5183 PR
+6 setlinewidth
+DO
+c0
+ 898 4612 mt  898  414 L
+ 898  414 mt  898  414 L
+1489 4612 mt 1489  414 L
+1489  414 mt 1489  414 L
+2081 4612 mt 2081  414 L
+2081  414 mt 2081  414 L
+2672 4612 mt 2672  414 L
+2672  414 mt 2672  414 L
+3263 4612 mt 3263  414 L
+3263  414 mt 3263  414 L
+3855 4612 mt 3855  414 L
+3855  414 mt 3855  414 L
+4446 4612 mt 4446  414 L
+4446  414 mt 4446  414 L
+5037 4612 mt 5037  414 L
+5037  414 mt 5037  414 L
+5629 4612 mt 5629  414 L
+5629  414 mt 5629  414 L
+6220 4612 mt 6220  414 L
+6220  414 mt 6220  414 L
+ 898 4612 mt 6220 4612 L
+6220 4612 mt 6220 4612 L
+ 898 3213 mt 6220 3213 L
+6220 3213 mt 6220 3213 L
+ 898 1813 mt 6220 1813 L
+6220 1813 mt 6220 1813 L
+ 898  414 mt 6220  414 L
+6220  414 mt 6220  414 L
+ 898 4612 mt  898  414 L
+ 898  414 mt 6220  414 L
+ 898 4612 mt  898  414 L
+ 898  414 mt 6220  414 L
+ 898 4612 mt  898  414 L
+ 898  414 mt 6220  414 L
+SO
+ 898 4612 mt 6220 4612 L
+ 898  414 mt 6220  414 L
+ 898 4612 mt  898  414 L
+6220 4612 mt 6220  414 L
+ 898  414 mt  898  414 L
+6220 4612 mt 6220 4612 L
+ 898 4612 mt 6220 4612 L
+ 898 4612 mt  898  414 L
+ 898 4612 mt  898 4612 L
+ 898 4612 mt  898 4559 L
+ 898  414 mt  898  467 L
+ 858 4773 mt 
+(1) s
+1489 4612 mt 1489 4559 L
+1489  414 mt 1489  467 L
+1449 4773 mt 
+(2) s
+2081 4612 mt 2081 4559 L
+2081  414 mt 2081  467 L
+2041 4773 mt 
+(3) s
+2672 4612 mt 2672 4559 L
+2672  414 mt 2672  467 L
+2632 4773 mt 
+(4) s
+3263 4612 mt 3263 4559 L
+3263  414 mt 3263  467 L
+3223 4773 mt 
+(5) s
+3855 4612 mt 3855 4559 L
+3855  414 mt 3855  467 L
+3815 4773 mt 
+(6) s
+4446 4612 mt 4446 4559 L
+4446  414 mt 4446  467 L
+4406 4773 mt 
+(7) s
+5037 4612 mt 5037 4559 L
+5037  414 mt 5037  467 L
+4997 4773 mt 
+(8) s
+5629 4612 mt 5629 4559 L
+5629  414 mt 5629  467 L
+5589 4773 mt 
+(9) s
+6220 4612 mt 6220 4559 L
+6220  414 mt 6220  467 L
+6140 4773 mt 
+(10) s
+ 898 4612 mt  951 4612 L
+6220 4612 mt 6167 4612 L
+ 791 4665 mt 
+(0) s
+ 898 3213 mt  951 3213 L
+6220 3213 mt 6167 3213 L
+ 791 3266 mt 
+(5) s
+ 898 1813 mt  951 1813 L
+6220 1813 mt 6167 1813 L
+ 711 1866 mt 
+(10) s
+ 898  414 mt  951  414 L
+6220  414 mt 6167  414 L
+ 711  467 mt 
+(15) s
+ 898 4612 mt 6220 4612 L
+ 898  414 mt 6220  414 L
+ 898 4612 mt  898  414 L
+6220 4612 mt 6220  414 L
+ 898 4612 mt  898 4612 L
+6220  414 mt 6220  414 L
+gs 898 414 5323 4199 MR c np
+591 0 592 0 591 0 591 1 592 1 591 2 591 7 592 77 
+591 3964 898 560 10 MP stroke
+gr 
+3168 4933 mt 
+(Interaciones) s
+ 657 2749 mt  -90 rotate
+(Errores) s
+90 rotate
+2118  299 mt 
+(Caso1: Variacion del EMC respecto al tiempo) s
+
+end	% pop colortable dictionary
+
+eplot
+%%EndObject graph 1
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%BoundingBox: 017 180 593 611
+%%Pages: 001
+%%EOF
